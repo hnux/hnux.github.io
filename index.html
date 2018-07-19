@@ -421,172 +421,20 @@
 
       
         
-          
-            <p>[TOC]</p>
+          <p>[TOC]</p>
 <h1 id="1-CSS-基础"><a href="#1-CSS-基础" class="headerlink" title="1. CSS 基础"></a>1. CSS 基础</h1><blockquote>
 <p><a href="http://www.w3school.com.cn/cssref/css_selectors.asp" target="_blank" rel="noopener">CSS 选择器参考手册</a></p>
 <p><a href="http://biaoyansu.com/9.core" target="_blank" rel="noopener">CSS 核心概念和知识点</a></p>
 <p><a href="http://biaoyansu.com/9.convention" target="_blank" rel="noopener">常用命名惯例参考</a></p>
 <p><a href="http://biaoyansu.com/9.userAgentStyle" target="_blank" rel="noopener">默认浏览器样式</a></p>
 </blockquote>
-<h2 id="1-1-import"><a href="#1-1-import" class="headerlink" title="1.1 @import"></a>1.1 @import</h2><ul>
-<li>一个 <code>.css</code> 要引入其他 <code>.css</code> , 要把 <code>@import url(xxx.css);</code> 语句写在开头;</li>
-<li>用得比较少;</li>
-</ul>
-<h2 id="1-2-内联样式-标签上加-style-属性"><a href="#1-2-内联样式-标签上加-style-属性" class="headerlink" title="1.2 内联样式: 标签上加 style 属性"></a>1.2 内联样式: 标签上加 style 属性</h2><ul>
-<li>优先级很高; 可复用性差;</li>
-<li><code>css</code> 指定得越确切, 优先级越高; 内联 &gt; 嵌入 &gt; 外联;</li>
-<li>优先级最高的是, 在 <code>.css</code> 里, 标签选择器的属性后加入 <code>!important</code> 关键词; 谨慎使用;</li>
-</ul>
-<h2 id="1-3-嵌入样式和外联样式"><a href="#1-3-嵌入样式和外联样式" class="headerlink" title="1.3 嵌入样式和外联样式"></a>1.3 嵌入样式和外联样式</h2><ul>
-<li><p>嵌入样式: <code>.html</code> 的 <code>&lt;head&gt;</code> 中添加 <code>&lt;style&gt;</code> ;</p>
-</li>
-<li><p>外联样式: <code>.html</code> 的 <code>&lt;head&gt;</code> 中添加 <code>&lt;link&gt;</code> 引入 <code>.css</code> 文件; 最常用, 最灵活;</p>
-</li>
-</ul>
-<h2 id="1-4-元素选择器"><a href="#1-4-元素选择器" class="headerlink" title="1.4 元素选择器"></a>1.4 元素选择器</h2><ul>
-<li><p><code>,</code> 用于区隔同组的选择器 <code>yourElementName</code> ;</p>
-</li>
-<li><p>太长的话, 可以换行;</p>
-</li>
-</ul>
-<h2 id="1-5-class-选择器"><a href="#1-5-class-选择器" class="headerlink" title="1.5 class 选择器"></a>1.5 class 选择器</h2><ul>
-<li><code>.html</code> 中的 <code>class</code> 属性用空格区隔;</li>
-<li>class 选择器 <code>.yourClassName</code> 可以组合使用, 中间没有空格; </li>
-<li>如果有空格, 表示层级关系;</li>
-</ul>
-<h2 id="1-6-id-选择器"><a href="#1-6-id-选择器" class="headerlink" title="1.6 id 选择器"></a>1.6 id 选择器</h2><ul>
-<li>id 选择器 <code>#yourIdName</code> 最好不要重复;</li>
-</ul>
-<h2 id="1-7-属性选择器"><a href="#1-7-属性选择器" class="headerlink" title="1.7 属性选择器"></a>1.7 属性选择器</h2><ul>
-<li>属性选择器 <code>[yourAttributeName]</code> ; 与元素选择器配合使用;</li>
-<li>传入属性值的方式(完全匹配) <code>[yourAttributeName=&quot;yourValue&quot;]</code> ;</li>
-<li>包含属性值的方式(部分匹配) <code>[yourAttributeName*=&quot;yourValue&quot;]</code> ;</li>
-<li>匹配开始的字符 <code>[yourAttributeName^=&quot;yourValue&quot;]</code> ;</li>
-<li>匹配结束的字符 <code>[yourAttributeName$=&quot;yourValue&quot;]</code> ;</li>
-</ul>
-<h2 id="1-8-后代选择器"><a href="#1-8-后代选择器" class="headerlink" title="1.8 后代选择器"></a>1.8 后代选择器</h2><ul>
-<li><p><code>*</code> 是元素通配符; 优先级比较低;</p>
-</li>
-<li><p>用得最频繁的选择方式;</p>
-</li>
-</ul>
-<h2 id="1-9-相邻选择器"><a href="#1-9-相邻选择器" class="headerlink" title="1.9 相邻选择器"></a>1.9 相邻选择器</h2><ul>
-<li>只会从上往下选, 过去了就过去了; 主要是出于性能方面的考虑;</li>
-<li><code>+ yourSelector</code> 表示选中下一个;</li>
-<li><code>~ yourSelector</code> 表示选中接下来的所有平级元素;</li>
-</ul>
-<h2 id="1-10-伪类选择器"><a href="#1-10-伪类选择器" class="headerlink" title="1.10 伪类选择器"></a>1.10 伪类选择器</h2><ul>
-<li>锚: <code>a:link</code> , <code>a:visited</code> , <code>a:hover</code> , <code>a:active</code> ;</li>
-<li>按钮: <code>button:hover</code> , <code>button:active</code> ;</li>
-<li>输入框:  <code>input:focus</code> ;</li>
-</ul>
-<h2 id="1-11-伪元素选择器"><a href="#1-11-伪元素选择器" class="headerlink" title="1.11 伪元素选择器"></a>1.11 伪元素选择器</h2><ul>
-<li>建议使用 <code>:</code> , 因为老旧的浏览器对它的兼容性更好, <code>::</code> 出现得比较晚; </li>
-<li>段落: <code>p:first-letter</code> ;</li>
-<li>在元素尾部追加内容: <code>.yourClassName:after</code> ;</li>
-<li>在元素头部添加内容: <code>.yourClassName:before</code> ;</li>
-<li>为 [ 第 1 个 / 第 n 个 / 最后一个] 元素添加样式:  <code>.yourClassName:[first-child / nth-child(x) / last-child]</code> ;</li>
-</ul>
-<h2 id="1-12-选择器权重"><a href="#1-12-选择器权重" class="headerlink" title="1.12 选择器权重"></a>1.12 选择器权重</h2><table>
-<thead>
-<tr>
-<th style="text-align:center">style 属性 (内联)</th>
-<th style="text-align:center">ID 选择器</th>
-<th style="text-align:center">[类 / 属性 / 伪类] 选择器</th>
-<th style="text-align:center">元素选择器</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">1000</td>
-<td style="text-align:center">0100</td>
-<td style="text-align:center">0010</td>
-<td style="text-align:center">0001</td>
-</tr>
-</tbody>
-</table>
-<h2 id="1-13-字体属性"><a href="#1-13-字体属性" class="headerlink" title="1.13 字体属性"></a>1.13 字体属性</h2><h3 id="1-13-1-font-family"><a href="#1-13-1-font-family" class="headerlink" title="1.13.1 font-family"></a>1.13.1 font-family</h3><table>
-<thead>
-<tr>
-<th style="text-align:right">font-family</th>
-<th style="text-align:left">description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:right">serif</td>
-<td style="text-align:left">衬线字体, 在笔画拐弯的地方会有装饰, 更古典</td>
-</tr>
-<tr>
-<td style="text-align:right">sans-serif</td>
-<td style="text-align:left">非衬线字体, 更加圆滑, 更现代</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>从第一个字体开始扫描, 如果都没找到, 则用默认字体;</li>
-</ul>
-<h3 id="1-13-2-font-weight"><a href="#1-13-2-font-weight" class="headerlink" title="1.13.2 font-weight"></a>1.13.2 font-weight</h3><ul>
-<li>值在 100 - 900 之间;</li>
-<li>normal;</li>
-<li>bold;</li>
-</ul>
-<h3 id="1-13-3-font-size"><a href="#1-13-3-font-size" class="headerlink" title="1.13.3 font-size"></a>1.13.3 font-size</h3><ul>
-<li><p>px;</p>
-</li>
-<li><p>%: 母元素字体大小的百分比;</p>
-</li>
-<li><p>inherit: 继承母元素的字体大小;</p>
-</li>
-</ul>
-<h2 id="1-14-文本属性"><a href="#1-14-文本属性" class="headerlink" title="1.14 文本属性"></a>1.14 文本属性</h2><ul>
-<li><p>text-align(对齐方式): left; center; justify;</p>
-</li>
-<li><p>line-height(行高): 数字(字体大小的倍数); px; </p>
-<p><img src="../Sun.code/Fr/9.12_line_height.png" alt=""></p>
-</li>
-<li><p>text-decoration: underline; overline; line-through; none;</p>
-</li>
-</ul>
-<h2 id="1-15-display-属性"><a href="#1-15-display-属性" class="headerlink" title="1.15 display 属性"></a>1.15 display 属性</h2><h3 id="1-15-1-block-块级元素"><a href="#1-15-1-block-块级元素" class="headerlink" title="1.15.1 block(块级元素)"></a>1.15.1 block(块级元素)</h3><ul>
-<li>默认为浏览器宽度; </li>
-<li>即使设定了 <code>width</code> , 依然用 <code>margin</code> 占着剩余宽度;</li>
-<li><code>div</code> 默认为 <code>block</code> ;</li>
-<li><code>block</code> 可以想象成固定的盒子;</li>
-</ul>
-<h3 id="1-15-2-inline-行内元素"><a href="#1-15-2-inline-行内元素" class="headerlink" title="1.15.2 inline(行内元素)"></a>1.15.2 inline(行内元素)</h3><ul>
-<li>一般用于文字; </li>
-<li><code>inline</code> 可以想象成软的袋子;</li>
-<li>添加 <code>padding</code> , <code>margin</code> 只对左右有效, 对上下无效; </li>
-</ul>
-<h3 id="1-15-3-inline-block-行内块元素"><a href="#1-15-3-inline-block-行内块元素" class="headerlink" title="1.15.3 inline-block(行内块元素)"></a>1.15.3 inline-block(行内块元素)</h3><ul>
-<li>可以添加 <code>padding</code> , <code>margin</code> , 而且还可以流动;</li>
-<li>一般用于按钮, 导航栏链接;</li>
-</ul>
-<h3 id="1-15-4-none"><a href="#1-15-4-none" class="headerlink" title="1.15.4 none"></a>1.15.4 none</h3><ul>
-<li>用于隐藏元素; </li>
-<li>存在于 DOM 里, 但不显示;</li>
-</ul>
-<h2 id="1-16-块级框"><a href="#1-16-块级框" class="headerlink" title="1.16  块级框"></a>1.16  块级框</h2><h3 id="1-16-0-层次关系"><a href="#1-16-0-层次关系" class="headerlink" title="1.16.0 层次关系"></a>1.16.0 层次关系</h3><ul>
-<li><p>margin(外边距) &gt; border(边框) &gt; padding(内边距) &gt; content(内容区);</p>
-<p><img src="../Sun.code/Fr/9.14_frame.png" alt=""></p>
-</li>
-</ul>
-<h3 id="1-16-1-content"><a href="#1-16-1-content" class="headerlink" title="1.16.1 content"></a>1.16.1 content</h3><ul>
-<li>width; height;</li>
-</ul>
-<h3 id="1-16-2-padding"><a href="#1-16-2-padding" class="headerlink" title="1.16.2 padding"></a>1.16.2 padding</h3><ul>
-<li>padding: px;</li>
-</ul>
-<h3 id="1-16-3-border"><a href="#1-16-3-border" class="headerlink" title="1.16.3 border"></a>1.16.3 border</h3><ul>
-<li>border: border-width border-style  border-color;</li>
-</ul>
-<h3 id="1-16-4-margin"><a href="#1-16-4-margin" class="headerlink" title="1.16.4 margin"></a>1.16.4 margin</h3><ul>
-<li>margin: px;</li>
-</ul>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/07/19/027_CSS_Notes/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
