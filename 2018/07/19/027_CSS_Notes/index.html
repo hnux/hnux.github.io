@@ -81,20 +81,20 @@
 
 
 
-<meta name="description" content="[TOC] 1. CSS 基础 CSS 选择器参考手册 CSS 核心概念和知识点 常用命名惯例参考 默认浏览器样式">
+<meta name="description" content="1. CSS 基础 CSS 选择器参考手册 CSS 核心概念和知识点 常用命名惯例参考 默认浏览器样式">
 <meta name="keywords" content="CSS">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CSS 学习笔记">
 <meta property="og:url" content="https://hnux.github.io/2018/07/19/027_CSS_Notes/index.html">
 <meta property="og:site_name" content="Hnux Blog">
-<meta property="og:description" content="[TOC] 1. CSS 基础 CSS 选择器参考手册 CSS 核心概念和知识点 常用命名惯例参考 默认浏览器样式">
+<meta property="og:description" content="1. CSS 基础 CSS 选择器参考手册 CSS 核心概念和知识点 常用命名惯例参考 默认浏览器样式">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://ws4.sinaimg.cn/large/006tKfTcgy1ftgbr2nbjlj30cd06bdg8.jpg">
 <meta property="og:image" content="https://ws4.sinaimg.cn/large/006tNc79gy1ftgcxvjvfej30ag08it94.jpg">
-<meta property="og:updated_time" content="2018-07-20T07:28:24.990Z">
+<meta property="og:updated_time" content="2018-07-21T13:39:01.117Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CSS 学习笔记">
-<meta name="twitter:description" content="[TOC] 1. CSS 基础 CSS 选择器参考手册 CSS 核心概念和知识点 常用命名惯例参考 默认浏览器样式">
+<meta name="twitter:description" content="1. CSS 基础 CSS 选择器参考手册 CSS 核心概念和知识点 常用命名惯例参考 默认浏览器样式">
 <meta name="twitter:image" content="https://ws4.sinaimg.cn/large/006tKfTcgy1ftgbr2nbjlj30cd06bdg8.jpg">
 
 
@@ -421,8 +421,7 @@
       
 
       
-        <p>[TOC]</p>
-<h1 id="1-CSS-基础"><a href="#1-CSS-基础" class="headerlink" title="1. CSS 基础"></a>1. CSS 基础</h1><blockquote>
+        <h1 id="1-CSS-基础"><a href="#1-CSS-基础" class="headerlink" title="1. CSS 基础"></a>1. CSS 基础</h1><blockquote>
 <p><a href="http://www.w3school.com.cn/cssref/css_selectors.asp" target="_blank" rel="noopener">CSS 选择器参考手册</a></p>
 <p><a href="http://biaoyansu.com/9.core" target="_blank" rel="noopener">CSS 核心概念和知识点</a></p>
 <p><a href="http://biaoyansu.com/9.convention" target="_blank" rel="noopener">常用命名惯例参考</a></p>
@@ -430,29 +429,31 @@
 </blockquote>
 <a id="more"></a>
 <h2 id="1-1-import"><a href="#1-1-import" class="headerlink" title="1.1 @import"></a>1.1 @import</h2><ul>
-<li>一个 <code>.css</code> 要引入其他 <code>.css</code> , 要把 <code>@import url(xxx.css);</code> 语句写在开头;</li>
+<li>一个 <code>.css</code> 要引入其他 <code>.css</code> , 要把 <code>@import url(xxx.css);</code> 语句写在文件的开头;</li>
 <li>用得比较少;</li>
 </ul>
-<h2 id="1-2-内联样式-标签上加-style-属性"><a href="#1-2-内联样式-标签上加-style-属性" class="headerlink" title="1.2 内联样式: 标签上加 style 属性"></a>1.2 内联样式: 标签上加 style 属性</h2><ul>
-<li>优先级很高; 可复用性差;</li>
-<li><code>css</code> 指定得越确切, 优先级越高; 内联 &gt; 嵌入 &gt; 外联;</li>
-<li>优先级最高的是, 在 <code>.css</code> 里, 标签选择器的属性后加入 <code>!important</code> 关键词; 谨慎使用;</li>
+<h2 id="1-2-行内样式-标签上加-style-属性"><a href="#1-2-行内样式-标签上加-style-属性" class="headerlink" title="1.2 行内样式: 标签上加 style 属性"></a>1.2 行内样式: 标签上加 style 属性</h2><ul>
+<li>行内CSS, 也叫行级CSS, 内联CSS;</li>
+<li>通常行内CSS作为测试使用, 可以查找代码中bug;</li>
+<li>便捷高效, 优先级很高; 可复用性差;</li>
+<li><code>css</code> 指定得越确切, 优先级越高; 行内 &gt; 页级 &gt; 外联;</li>
+<li>优先级最高的是, 在 <code>.css</code> 里, 选择器的定义语句末尾加入 <code>!important</code> 关键词; 谨慎使用;</li>
 </ul>
-<h2 id="1-3-嵌入样式和外联样式"><a href="#1-3-嵌入样式和外联样式" class="headerlink" title="1.3 嵌入样式和外联样式"></a>1.3 嵌入样式和外联样式</h2><ul>
-<li><p>嵌入样式: <code>.html</code> 的 <code>&lt;head&gt;</code> 中添加 <code>&lt;style&gt;</code> ;</p>
+<h2 id="1-3-页级样式和外联样式"><a href="#1-3-页级样式和外联样式" class="headerlink" title="1.3 页级样式和外联样式"></a>1.3 页级样式和外联样式</h2><ul>
+<li><p>页级样式(页内, 内部): <code>.html</code> 的 <code>&lt;head&gt;</code> 中添加 <code>&lt;style&gt;</code> , 作用范围仅限于本页元素;</p>
 </li>
 <li><p>外联样式: <code>.html</code> 的 <code>&lt;head&gt;</code> 中添加 <code>&lt;link&gt;</code> 引入 <code>.css</code> 文件; 最常用, 最灵活;</p>
 </li>
 </ul>
 <h2 id="1-4-元素选择器"><a href="#1-4-元素选择器" class="headerlink" title="1.4 元素选择器"></a>1.4 元素选择器</h2><ul>
-<li><p><code>,</code> 用于区隔同组的选择器 <code>yourElementName</code> ;</p>
+<li><p><code>,</code> 用于区隔同组的元素选择器 <code>yourElementName</code> ;</p>
 </li>
 <li><p>太长的话, 可以换行;</p>
 </li>
 </ul>
 <h2 id="1-5-class-选择器"><a href="#1-5-class-选择器" class="headerlink" title="1.5 class 选择器"></a>1.5 class 选择器</h2><ul>
 <li><code>.html</code> 中的 <code>class</code> 属性用空格区隔;</li>
-<li>class 选择器 <code>.yourClassName</code> 可以组合使用, 中间没有空格; </li>
+<li>class 选择器 <code>.yourClassName</code> 可以组合使用, 中间没有空格, 表示同时选中; </li>
 <li>如果有空格, 表示层级关系;</li>
 </ul>
 <h2 id="1-6-id-选择器"><a href="#1-6-id-选择器" class="headerlink" title="1.6 id 选择器"></a>1.6 id 选择器</h2><ul>
@@ -464,31 +465,41 @@
 <li>包含属性值的方式(部分匹配) <code>[yourAttributeName*=&quot;yourValue&quot;]</code> ;</li>
 <li>匹配开始的字符 <code>[yourAttributeName^=&quot;yourValue&quot;]</code> ;</li>
 <li>匹配结束的字符 <code>[yourAttributeName$=&quot;yourValue&quot;]</code> ;</li>
+<li>应用: 过滤安全链接, 自定义不同类型的输入框…</li>
 </ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* title 属性, 相当于注释, 鼠标悬停会显示注释; */</span></span><br><span class="line"><span class="selector-attr">[title]</span> &#123;</span><br><span class="line">    <span class="attribute">background</span>: red;</span><br><span class="line">    <span class="comment">/* color 为文本颜色 */</span></span><br><span class="line">    <span class="attribute">color</span>: white;   </span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/* 1. 完全匹配 */</span></span><br><span class="line"><span class="selector-attr">[title="点击此处登录"]</span> &#123;</span><br><span class="line">    <span class="attribute">background</span>: green;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/* 2. 部分匹配 */</span></span><br><span class="line"><span class="selector-attr">[title*="点击"]</span> &#123;</span><br><span class="line">    <span class="attribute">background</span>: blue;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/* 3. 匹配开头 */</span></span><br><span class="line"><span class="selector-attr">[title^="点击"]</span> &#123;</span><br><span class="line">    <span class="attribute">background</span>: yellow;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/* 4. 匹配结尾 */</span></span><br><span class="line"><span class="selector-attr">[title$="博客"]</span> &#123;</span><br><span class="line">    <span class="attribute">background</span>: violet;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/* 5. 用来过滤安全链接 */</span></span><br><span class="line"><span class="selector-tag">a</span><span class="selector-attr">[href^="https://hnux.github.io"]</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>: blue;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/* 6. 自定义不同类型的输入框 */</span> </span><br><span class="line"><span class="selector-tag">input</span><span class="selector-attr">[type="submit"]</span> &#123;</span><br><span class="line">    <span class="attribute">border</span>: <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">input</span><span class="selector-attr">[type="text"]</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">    <span class="attribute">border</span>: <span class="number">5px</span> solid black;</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">10px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="1-8-后代选择器"><a href="#1-8-后代选择器" class="headerlink" title="1.8 后代选择器"></a>1.8 后代选择器</h2><ul>
-<li><p><code>*</code> 是元素通配符; 优先级比较低;</p>
-</li>
-<li><p>用得最频繁的选择方式;</p>
-</li>
+<li><code>*</code> 是元素通配符; 优先级比较低;</li>
+<li>用得最频繁的选择方式;</li>
 </ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.a</span> <span class="selector-class">.c</span> &#123;</span><br><span class="line">    <span class="attribute">border</span>: <span class="number">2px</span> solid black;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="1-9-相邻选择器"><a href="#1-9-相邻选择器" class="headerlink" title="1.9 相邻选择器"></a>1.9 相邻选择器</h2><ul>
 <li>只会从上往下选, 过去了就过去了; 主要是出于性能方面的考虑;</li>
 <li><code>+ yourSelector</code> 表示选中下一个;</li>
 <li><code>~ yourSelector</code> 表示选中接下来的所有平级元素;</li>
 </ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.b</span> + <span class="selector-tag">div</span> &#123;</span><br><span class="line">    <span class="attribute">background</span>: <span class="built_in">rgba</span>(0, 255, 0, .2);</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.a</span> ~ <span class="selector-tag">div</span> &#123;</span><br><span class="line">    <span class="attribute">background</span>: <span class="built_in">rgba</span>(0, 0, 255, .2);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="1-10-伪类选择器"><a href="#1-10-伪类选择器" class="headerlink" title="1.10 伪类选择器"></a>1.10 伪类选择器</h2><ul>
+<li>表现得像类, 用起来像类, 但事实上又不是类, 更多的是一种状态;</li>
 <li>锚: <code>a:link</code> , <code>a:visited</code> , <code>a:hover</code> , <code>a:active</code> ;</li>
 <li>按钮: <code>button:hover</code> , <code>button:active</code> ;</li>
 <li>输入框:  <code>input:focus</code> ;</li>
 </ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:link</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>: blue;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:visited</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>: gray;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">button</span><span class="selector-pseudo">:hover</span>,</span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">    <span class="attribute">background</span>: <span class="number">#888</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">button</span><span class="selector-pseudo">:active</span>,</span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:active</span> &#123;</span><br><span class="line">    <span class="attribute">background</span>: <span class="number">#333</span>;</span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#fff</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">input</span><span class="selector-pseudo">:focus</span> &#123;</span><br><span class="line">    <span class="comment">/* 去掉轮廓 */</span></span><br><span class="line">    <span class="attribute">outline</span>: none;</span><br><span class="line">    <span class="attribute">background</span>: <span class="number">#aaa</span>; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="1-11-伪元素选择器"><a href="#1-11-伪元素选择器" class="headerlink" title="1.11 伪元素选择器"></a>1.11 伪元素选择器</h2><ul>
+<li>结构上不存在, 逻辑上存在; </li>
 <li>建议使用 <code>:</code> , 因为老旧的浏览器对它的兼容性更好, <code>::</code> 出现得比较晚; </li>
 <li>段落: <code>p:first-letter</code> ;</li>
 <li>在元素尾部追加内容: <code>.yourClassName:after</code> ;</li>
 <li>在元素头部添加内容: <code>.yourClassName:before</code> ;</li>
 <li>为 [ 第 1 个 / 第 n 个 / 最后一个] 元素添加样式:  <code>.yourClassName:[first-child / nth-child(x) / last-child]</code> ;</li>
 </ul>
-<h2 id="1-12-选择器权重"><a href="#1-12-选择器权重" class="headerlink" title="1.12 选择器权重"></a>1.12 选择器权重</h2><table>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 1. 段落首字母 */</span></span><br><span class="line"><span class="selector-tag">p</span><span class="selector-pseudo">:first-letter</span> &#123;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">30px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/* 2. 元素尾部追加 */</span></span><br><span class="line"><span class="selector-class">.help</span><span class="selector-pseudo">:after</span> &#123;</span><br><span class="line">    <span class="attribute">content</span>: <span class="string">"[?]"</span>;</span><br><span class="line">    <span class="attribute">color</span>: blue;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/* 2.1 元素头部插入 */</span></span><br><span class="line"><span class="selector-class">.help</span><span class="selector-pseudo">::before</span> &#123;</span><br><span class="line">    <span class="attribute">content</span>: <span class="string">"**"</span>;</span><br><span class="line">    <span class="attribute">color</span>: red;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/* 3. 为第 1 个元素添加样式 */</span></span><br><span class="line"><span class="selector-tag">div</span> <span class="selector-tag">p</span><span class="selector-pseudo">:first-child</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>: blue;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/* 3.1 为最后一个元素添加样式 */</span></span><br><span class="line"><span class="selector-tag">div</span> <span class="selector-tag">p</span><span class="selector-pseudo">:last-child</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>: red;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/* 3.2 为第 n 个元素添加样式 */</span></span><br><span class="line"><span class="selector-tag">div</span> <span class="selector-tag">p</span><span class="selector-pseudo">:nth-child(1)</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>: green;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="1-12-选择器权重"><a href="#1-12-选择器权重" class="headerlink" title="1.12 选择器权重"></a>1.12 选择器权重</h2><ul>
+<li>指定得越确切, 优先级越高;</li>
+<li>谨慎使用内联样式;</li>
+</ul>
+<table>
 <thead>
 <tr>
 <th style="text-align:center">style 属性 (内联)</th>
@@ -746,7 +757,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -824,7 +835,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-CSS-基础"><span class="nav-text">1. CSS 基础</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-1-import"><span class="nav-text">1.1 @import</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-2-内联样式-标签上加-style-属性"><span class="nav-text">1.2 内联样式: 标签上加 style 属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-3-嵌入样式和外联样式"><span class="nav-text">1.3 嵌入样式和外联样式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-4-元素选择器"><span class="nav-text">1.4 元素选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-5-class-选择器"><span class="nav-text">1.5 class 选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-6-id-选择器"><span class="nav-text">1.6 id 选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-7-属性选择器"><span class="nav-text">1.7 属性选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-8-后代选择器"><span class="nav-text">1.8 后代选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-9-相邻选择器"><span class="nav-text">1.9 相邻选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-10-伪类选择器"><span class="nav-text">1.10 伪类选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-11-伪元素选择器"><span class="nav-text">1.11 伪元素选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-12-选择器权重"><span class="nav-text">1.12 选择器权重</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-13-字体属性"><span class="nav-text">1.13 字体属性</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-13-1-font-family"><span class="nav-text">1.13.1 font-family</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-13-2-font-weight"><span class="nav-text">1.13.2 font-weight</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-13-3-font-size"><span class="nav-text">1.13.3 font-size</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-14-文本属性"><span class="nav-text">1.14 文本属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-15-display-属性"><span class="nav-text">1.15 display 属性</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-15-1-block-块级元素"><span class="nav-text">1.15.1 block(块级元素)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-15-2-inline-行内元素"><span class="nav-text">1.15.2 inline(行内元素)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-15-3-inline-block-行内块元素"><span class="nav-text">1.15.3 inline-block(行内块元素)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-15-4-none"><span class="nav-text">1.15.4 none</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-16-块级框"><span class="nav-text">1.16  块级框</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-16-0-层次关系"><span class="nav-text">1.16.0 层次关系</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-16-1-content"><span class="nav-text">1.16.1 content</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-16-2-padding"><span class="nav-text">1.16.2 padding</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-16-3-border"><span class="nav-text">1.16.3 border</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-16-4-margin"><span class="nav-text">1.16.4 margin</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-CSS-基础"><span class="nav-text">1. CSS 基础</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-1-import"><span class="nav-text">1.1 @import</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-2-行内样式-标签上加-style-属性"><span class="nav-text">1.2 行内样式: 标签上加 style 属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-3-页级样式和外联样式"><span class="nav-text">1.3 页级样式和外联样式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-4-元素选择器"><span class="nav-text">1.4 元素选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-5-class-选择器"><span class="nav-text">1.5 class 选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-6-id-选择器"><span class="nav-text">1.6 id 选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-7-属性选择器"><span class="nav-text">1.7 属性选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-8-后代选择器"><span class="nav-text">1.8 后代选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-9-相邻选择器"><span class="nav-text">1.9 相邻选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-10-伪类选择器"><span class="nav-text">1.10 伪类选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-11-伪元素选择器"><span class="nav-text">1.11 伪元素选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-12-选择器权重"><span class="nav-text">1.12 选择器权重</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-13-字体属性"><span class="nav-text">1.13 字体属性</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-13-1-font-family"><span class="nav-text">1.13.1 font-family</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-13-2-font-weight"><span class="nav-text">1.13.2 font-weight</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-13-3-font-size"><span class="nav-text">1.13.3 font-size</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-14-文本属性"><span class="nav-text">1.14 文本属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-15-display-属性"><span class="nav-text">1.15 display 属性</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-15-1-block-块级元素"><span class="nav-text">1.15.1 block(块级元素)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-15-2-inline-行内元素"><span class="nav-text">1.15.2 inline(行内元素)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-15-3-inline-block-行内块元素"><span class="nav-text">1.15.3 inline-block(行内块元素)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-15-4-none"><span class="nav-text">1.15.4 none</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-16-块级框"><span class="nav-text">1.16  块级框</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-16-0-层次关系"><span class="nav-text">1.16.0 层次关系</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-16-1-content"><span class="nav-text">1.16.1 content</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-16-2-padding"><span class="nav-text">1.16.2 padding</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-16-3-border"><span class="nav-text">1.16.3 border</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-16-4-margin"><span class="nav-text">1.16.4 margin</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
