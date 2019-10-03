@@ -8,8 +8,8 @@
         <category>投资</category>
       </categories>
       <tags>
-        <tag>投资</tag>
         <tag>修行</tag>
+        <tag>投资</tag>
       </tags>
   </entry>
   <entry>
@@ -20,16 +20,16 @@
         <category>国学</category>
       </categories>
       <tags>
-        <tag>修行</tag>
         <tag>道德经</tag>
+        <tag>修行</tag>
       </tags>
   </entry>
   <entry>
     <title><![CDATA[OS X 下的效率神器 Alfred]]></title>
     <url>%2F2018%2F07%2F05%2F007%20OS%20X%20%E4%B8%8B%E7%9A%84%E6%95%88%E7%8E%87%E7%A5%9E%E5%99%A8%20Alfred%2F</url>
-    <content type="text"><![CDATA[0. 多用键盘干活儿 Alfred 是一个用键盘通过热键、关键字、自定义插件来加快操作效率的工具，它不但是搜索工具，还是快速启动工具，甚至能够操作许多系统功能。 —— 从零开始学习 Alfred | 少数派 1. 键盘符号图谱 左边 下面 右边 ↹（tab） ⌃（control） ␣（spacebar）空格 ⇪（caps lock） ⌥（option / alt） ⌅（enter） ⇧（shift） ⌘（command） ↩（return）回车 2. 双击 ⌘ 唤醒「搜索」 键盘输入 反馈 ␣ 或 &#39; 或 open + 打开文件（夹） find + 查找文件（夹）的位置 in + 查找文本内有关键字的文本文件 tags + 查找包含此标签的文件（夹） gg 或 wk 或 bd + 搜索 Google / Wikipedia / 百度 gh 或 sof 或 sf + 搜索 GitHub / StackOverFlow / 思否 zh 或 db 或 js + 搜索 知乎 / 豆瓣 / 简书 wx 或 wyy或 spp + 搜索 微信文章 / 网易云音乐 / 少数派 ytb 或 bl 或 yk + 搜索 Youtube / 哔哩哔哩 / 优酷 3. 双击 ⌘ 调用其他系统功能 常规系统命令：屏幕保护程序（screen saver）、显示回收站（trash）、清空回收站（empty trash）、登出（logout）、睡眠（sleep）、锁定（lock）、重启（restart）、关机（shutdown）、音量+（volup）、音量-（voldown）、静音（mute）。 程序管理命令：隐藏应用窗口（hide）、退出应用（quit）、强制退出应用（forcequit）、关闭所有应用（quitall）。 盘符管理命令：推出某个盘符（eject）、推出所有盘符（ejectall）。 控制台：&gt; + ； 字典：di + ； 计算器：直接输入表达式，实时显示结果； 4. 双击 ⌥ 唤醒「文件导航」 键盘输入 反馈 / 定位到根目录 ~ 定位到当前用户的 home 目录 ← 和 → 前进 和 后退 ⌥ + ↑ 缓存选中的文件 ⌥ + ↓ 缓存一个文件（夹）并移动到下一项 ⌥ + ← 移除最后一项缓存 ⌥ + → 批量处理选中的文件（夹） ⌃ 或 fn 调出处理的动作 5. 双击 ⌃ 唤醒 「剪切板」 键盘输入 反馈 ⌘ + 双击 C 换行追加复制 6. Workflows 工作流 触发器 测色计 #, rgb, hsl, c 谷歌书签 ,b 设计 WorkflowsWorkflows 的设计可以参考官方开发者文档，以及 这篇关于如何开发的文章。在这里就不赘述了。 Workflows 资源 Alfred 论坛：个人开发者开发的解决比较特别的问题的插件居多，可以比较容易的通过 alfred + 问题关键词 在 Google 上搜到。 开发者专用 Workflows 系列 这个家伙在 Github 上维护的 workflows 不能够更赞了，解决了很多开发中的痒点。随便提几个个人觉得很有用的： sourceTree 的 workflow 能够直接搜索 sourceTree 中的项目并快速打开。 npm / gem 的快速索引。 caffeinate 防止电脑休眠。 emoji 表情速查。 github 个人 / 全局项目速查 Workflows 中文站：国人收藏的超多 Workflows，总有几款能够满足你。 Workflows 官方站点：官方推荐的「装机必备」系列 Workflows。 Packal：官方推荐的 Workflows 分享站点。 http://blog.surfacew.com/tool/2016/08/03/Alfred/ 5.5 想破解？Mac 神器 Alfred3 破解 相关软件：Manico，Contexts，快速切换应用； 相关 Win 软件：Everything，快速找文件；Wox ；]]></content>
+    <content type="text"><![CDATA[多用键盘干活儿 Alfred 是一个用键盘通过热键、关键字、自定义插件来加快操作效率的工具，它不但是搜索工具，还是快速启动工具，甚至能够操作许多系统功能。 —— 从零开始学习 Alfred | 少数派 键盘符号图谱 左边 下面 右边 ↹（tab） ⌃（control） ␣（spacebar）空格 ⇪（caps lock） ⌥（option / alt） ⌅（enter） ⇧（shift） ⌘（command） ↩（return）回车 双击 ⌘ 唤醒「搜索」 键盘输入 反馈 ␣ 或 &#39; 或 open + 打开文件（夹） find + 查找文件（夹）的位置 in + 查找文本内有关键字的文本文件 tags + 查找包含此标签的文件（夹） gg 或 wk 或 bd + 搜索 Google / Wikipedia / 百度 gh 或 sof 或 sf + 搜索 GitHub / StackOverFlow / 思否 zh 或 db 或 js + 搜索 知乎 / 豆瓣 / 简书 wx 或 wyy或 spp + 搜索 微信文章 / 网易云音乐 / 少数派 ytb 或 bl 或 yk + 搜索 Youtube / 哔哩哔哩 / 优酷 双击 ⌘ 调用其他系统功能 常规系统命令：屏幕保护程序（screen saver）、显示回收站（trash）、清空回收站（empty trash）、登出（logout）、睡眠（sleep）、锁定（lock）、重启（restart）、关机（shutdown）、音量+（volup）、音量-（voldown）、静音（mute）。 程序管理命令：隐藏应用窗口（hide）、退出应用（quit）、强制退出应用（forcequit）、关闭所有应用（quitall）。 盘符管理命令：推出某个盘符（eject）、推出所有盘符（ejectall）。 控制台：&gt; + ； 字典：di + ； 计算器：直接输入表达式，实时显示结果； 双击 ⌥ 唤醒「文件导航」 键盘输入 反馈 / 定位到根目录 ~ 定位到当前用户的 home 目录 ← 和 → 前进 和 后退 ⌥ + ↑ 缓存选中的文件 ⌥ + ↓ 缓存一个文件（夹）并移动到下一项 ⌥ + ← 移除最后一项缓存 ⌥ + → 批量处理选中的文件（夹） ⌃ 或 fn 调出处理的动作 双击 ⌃ 唤醒 「剪切板」 键盘输入 反馈 ⌘ + 双击 C 换行追加复制 Workflows 工作流 触发器 测色计 #, rgb, hsl, c 谷歌书签 ,b 设计 WorkflowsWorkflows 的设计可以参考官方开发者文档，以及 这篇关于如何开发的文章。在这里就不赘述了。 Workflows 资源 Alfred 论坛：个人开发者开发的解决比较特别的问题的插件居多，可以比较容易的通过 alfred + 问题关键词 在 Google 上搜到。 开发者专用 Workflows 系列 这个家伙在 Github 上维护的 workflows 不能够更赞了，解决了很多开发中的痒点。随便提几个个人觉得很有用的： sourceTree 的 workflow 能够直接搜索 sourceTree 中的项目并快速打开。 npm / gem 的快速索引。 caffeinate 防止电脑休眠。 emoji 表情速查。 github 个人 / 全局项目速查 Workflows 中文站：国人收藏的超多 Workflows，总有几款能够满足你。 Workflows 官方站点：官方推荐的「装机必备」系列 Workflows。 Packal：官方推荐的 Workflows 分享站点。 http://blog.surfacew.com/tool/2016/08/03/Alfred/ 5.5 想破解？Mac 神器 Alfred3 破解 相关软件：Manico，Contexts，快速切换应用； 相关 Win 软件：Everything，快速找文件；Wox ；]]></content>
       <categories>
-        <category>软件</category>
+        <category>实用软件</category>
       </categories>
       <tags>
         <tag>效率神器</tag>
@@ -37,9 +37,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[「标签」]]></title>
-    <url>%2Ftags%2Findex.html</url>
-    <content type="text"><![CDATA[这里是「标签」页面]]></content>
+    <title><![CDATA[「关于我」]]></title>
+    <url>%2Fabout%2Findex.html</url>
+    <content type="text"><![CDATA[这里是「关于我」页面]]></content>
   </entry>
   <entry>
     <title><![CDATA[「分类」]]></title>
@@ -47,8 +47,8 @@
     <content type="text"><![CDATA[这里是「分类」页面]]></content>
   </entry>
   <entry>
-    <title><![CDATA[「关于我」]]></title>
-    <url>%2Fabout%2Findex.html</url>
-    <content type="text"><![CDATA[这里是「关于我」页面]]></content>
+    <title><![CDATA[「标签」]]></title>
+    <url>%2Ftags%2Findex.html</url>
+    <content type="text"><![CDATA[这里是「标签」页面]]></content>
   </entry>
 </search>
